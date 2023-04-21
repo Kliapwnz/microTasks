@@ -16,9 +16,9 @@ export const FirstMap = (props: FirstMapType) => {
             {props.students.map((el, index) => {
                     return (
                         <ul key={el.id}>
-                            <li>age: {el.age}</li>
-                            <li>{el.name}</li>
                             <li>{index + 1}</li>
+                            <li>{el.name}</li>
+                            <li>age: {el.age}</li>
                         </ul>
                     )
                 }
