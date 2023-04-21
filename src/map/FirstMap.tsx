@@ -13,11 +13,12 @@ type Team ={
 export const FirstMap = (props:FirstMapType) => {
     return (
         <div>
-            {props.students.map(el=>{
+            {props.students.map((el,index)=>{
                 return(
                     <ul key={el.id}>
-                <li>{el.age}</li>
+                <li>age: {el.age}</li>
                 <li>{el.name}</li>
+                        <li>{index +1}</li>
                 </ul>
                 )}
                 )}
