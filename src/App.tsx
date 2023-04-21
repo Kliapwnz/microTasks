@@ -7,7 +7,7 @@ import {Footer} from "./site/Footer";
 function App() {
     return (
         <div className="App">
-            <Header/>
+            <Header title="My Header"/>
             <Body/>
             <Footer/>
         </div>
