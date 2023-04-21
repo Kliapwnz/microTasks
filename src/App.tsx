@@ -4,9 +4,15 @@ import {Header} from "./site/Header";
 import {Body} from "./site/Body";
 import {Footer} from "./site/Footer";
 import {FirstMap} from "./map/FirstMap";
+import {Cars} from "./map/Cars";
 
 
 function App() {
+    const topCars = [
+        {manufacturer:'BMW', model:'m5cs'},
+        {manufacturer:'Mercedes', model:'e63s'},
+        {manufacturer:'Audi', model:'rs6'}
+    ]
     const students = [
         {id: 1, name: "James", age: 8},
         {id: 2, name: "Robert", age: 18},
@@ -23,10 +29,12 @@ function App() {
 
     return (
         <div className="App">
+            <Cars topCars={topCars}/>
             <Header title="My Header"/>
             <Body title="My Body"/>
             <Footer title="My Footer"/>
             <FirstMap students={students}/>
+
         </div>
     );
 }
