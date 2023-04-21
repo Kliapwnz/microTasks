@@ -1,9 +1,13 @@
 import React from 'react';
 
-export const Body = () => {
+type PropsType={
+    title:string
+}
+
+export const Body = (props:PropsType) => {
     return (
         <div>
-            Body
+            {props.title}
         </div>
     );
 };
