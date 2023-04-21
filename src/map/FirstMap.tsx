@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const FirstMap = () => {
+type FirstMapType={
+    students:any
+
+}
+
+export const FirstMap = (props:FirstMapType) => {
     return (
         <div>
             NewComponent
