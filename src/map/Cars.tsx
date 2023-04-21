@@ -14,14 +14,16 @@ export const Cars = (props:TopCarsType) => {
                 return(
                     <table>
                         <tr>
-                            <th>{index+1}</th>
+                            <th>number</th>
+                            <th>manufactured</th>
+                            <th>model</th>
                         </tr>
                         <tr>
+                            <td>{index+1}</td>
                             <td>{el.manufacturer}</td>
-                        </tr>
-                        <tr>
                             <td>{el.model}</td>
                         </tr>
+
                     </table>
                 )
             })}
