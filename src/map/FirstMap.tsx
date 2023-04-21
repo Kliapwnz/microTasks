@@ -15,10 +15,10 @@ export const FirstMap = (props:FirstMapType) => {
         <div>
             {props.students.map(el=>{
                 return(
-                    <div>
-                <div>{el.age}</div>
-                <span>{el.name}</span>
-                </div>
+                    <ul key={el.id}>
+                <li>{el.age}</li>
+                <li>{el.name}</li>
+                </ul>
                 )}
                 )}
         </div>
